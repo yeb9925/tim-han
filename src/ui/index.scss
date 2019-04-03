@@ -5,6 +5,38 @@ $tertiary-color: #DAFFEF;
 $quaternary-color: #5D737E;
 $overall-color: #FCFFFD;
 
+
+// Fade In
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@mixin element-fade-in() {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
 // General Purpose
 body {
   font-family: 'Montserrat', sans-serif;
@@ -65,29 +97,48 @@ body {
     color: black;
   }
   
-  .first-line {
-    color: #45ce95;
-    margin-right: 18vw;
-    margin-left: 18vw;
-  }
+  .first-paragraph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .second-line {
-    color: white;
-    margin: 0 18vw;
-    font-size: 500%;
-    text-shadow: 1px 0;
-  }
-
-  .third-line {
-    color: #8a91b2;
-    margin: 0 18vw;
-    font-size: 350%;
+    .first-line {
+      color: #45ce95;
+      margin-right: 5vw;
+      @include element-fade-in();
+      transition-delay: 100ms;
+    }
+  
+    .second-line {
+      color: white;
+      margin: 0 5vw 0 0;
+      font-size: 400%;
+      text-shadow: 1px 0;
+      @include element-fade-in();
+      transition-delay: 200ms;
+    }
+  
+    .third-line {
+      color: #8a91b2;
+      margin: 0 5vw 0 0;
+      font-size: 300%;
+      @include element-fade-in();
+      transition-delay: 300ms;
+    }
+  
+    .profile-pic {
+      width: 22vw;
+      @include element-fade-in();
+      transition-delay: 500ms;
+    }
   }
 
   .fourth-line {
     color: #8a91b2;
-    margin: 40px 18vw;
+    margin: 40px 20vw;
     line-height: 25px;
+    @include element-fade-in();
+    transition-delay: 400ms;
   }
 }
 
