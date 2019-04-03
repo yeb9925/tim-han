@@ -10,6 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: $overall-color;
   margin: 0;
+  background-color: #0e1830;
 }
 
 // Logo 
@@ -33,6 +34,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 110%;
+  color: white;
   &:hover,
   &:focus,
   &:active {
@@ -45,13 +47,14 @@ body {
 
 // Components
 #welcome-container,
-#about-container,
+#skill-container,
+#project-container,
+#writing-container,
 #contact-container {
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 // Welcome Component
@@ -60,6 +63,31 @@ body {
     text-align: center;
     font-size: 30px;
     color: black;
+  }
+  
+  .first-line {
+    color: #45ce95;
+    margin-right: 18vw;
+    margin-left: 18vw;
+  }
+
+  .second-line {
+    color: white;
+    margin: 0 18vw;
+    font-size: 500%;
+    text-shadow: 1px 0;
+  }
+
+  .third-line {
+    color: #8a91b2;
+    margin: 0 18vw;
+    font-size: 350%;
+  }
+
+  .fourth-line {
+    color: #8a91b2;
+    margin: 40px 18vw;
+    line-height: 25px;
   }
 }
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import * as Scroll from 'react-scroll'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export default class Navigation extends Component {
   constructor(props) {
@@ -13,6 +12,9 @@ export default class Navigation extends Component {
       <div id="nav-container">
         <nav id="nav-bar">
           <Link to="welcome-container" activeClass="active" spy={true} smooth={true} className="nav-links">Home</Link>
+          <Link to="skill-container" activeClass="active" spy={true} smooth={true} className="nav-links">Skill</Link>
+          <Link to="project-container" activeClass="active" spy={true} smooth={true} className="nav-links">Project</Link>
+          <Link to="writing-container" activeClass="active" spy={true} smooth={true} className="nav-links">Writing</Link>
           <Link to="about-container" activeClass="active" spy={true} smooth={true} className="nav-links">About</Link>
           <Link to="contact-container" activeClass="active" spy={true} smooth={true} className="nav-links">Contact</Link>
         </nav>
