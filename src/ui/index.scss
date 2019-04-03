@@ -31,10 +31,10 @@ $overall-color: #FCFFFD;
 }
 
 @mixin element-fade-in() {
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  animation: fadein 2s;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  animation: fadein 3s;
 }
 
 // General Purpose
@@ -104,15 +104,15 @@ body {
 
     .first-line {
       color: #45ce95;
-      margin-right: 5vw;
+      margin-right: 7vw;
       @include element-fade-in();
       transition-delay: 100ms;
     }
   
     .second-line {
       color: white;
-      margin: 0 5vw 0 0;
-      font-size: 400%;
+      margin: 0 7vw 0 0;
+      font-size: 430%;
       text-shadow: 1px 0;
       @include element-fade-in();
       transition-delay: 200ms;
@@ -120,8 +120,9 @@ body {
   
     .third-line {
       color: #8a91b2;
-      margin: 0 5vw 0 0;
+      margin: 0 7vw 0 0;
       font-size: 300%;
+      text-shadow: 1px 0;
       @include element-fade-in();
       transition-delay: 300ms;
     }
@@ -140,6 +141,31 @@ body {
     @include element-fade-in();
     transition-delay: 400ms;
   }
+
+  .email-me-container {
+    display: flex;
+    justify-content: center;
+
+    .email-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 145px;
+      height: 65px;
+      border: solid;
+      border-width: 2px;
+      border-color: #45ce95;
+      background-color: #45ce95;
+      padding: 1px;
+      border-radius: 10px;
+
+      .email {
+        color: white;
+        text-shadow: 1.5px 0;
+        margin: 0;
+      }
+    }
+  }
 }
 
 // About Component
@@ -157,5 +183,26 @@ body {
   label {
     margin: 5% 5%;
     font-size: 15px;
+  }
+}
+
+// Links Component
+#links-container {
+  position: fixed;
+  bottom: 0px;
+
+  .social-media-list {
+    list-style: none;
+
+    .linkedin,
+    .github,
+    .medium,
+    .twitter,
+    .instagram {
+      fill: #8a91b2;
+      width: 23px;
+      height: 23px;
+      margin: 12px 15px;
+    }
   }
 }

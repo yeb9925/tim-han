@@ -1,5 +1,6 @@
 export { default as Navigation } from './Navigation'
 export { default as Main } from './Main'
+export { default as Links } from './Links'
 export { default as Welcome } from './Welcome'
 export { default as Skill } from './Skill'
 export { default as Project } from './Project'

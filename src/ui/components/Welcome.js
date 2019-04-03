@@ -21,6 +21,11 @@ export default class Welcome extends Component {
             {' as a Software Engineer.'}
           </p>
         </div>
+        <div className="email-me-container">
+          <div className="email-me">
+            <h1 className="email"><a href="mailto:seungt.han@gmail.com" style={{textDecoration: 'none', color: 'white'}}>Email</a></h1>
+          </div>
+        </div>
       </div>
     )
   }
