@@ -10,4 +10,4 @@ yarn install
 yarn start
 ```
 
-On the browser go to localhost 8080
+On the browser go to localhost 3000
