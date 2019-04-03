@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
-const PORT = 8080
+const { PORT, MODE } = require('./config')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const path = require('path')
 
 // Logging Middleware
-app.use(morgan('dev'))
+app.use(morgan(MODE))
 
 // Body-parsing Middleware
 app.use(bodyParser.json())

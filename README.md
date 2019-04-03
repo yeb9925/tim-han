@@ -1,13 +1,13 @@
-## Single Page App (React) Boilerplate
+## Portfolio Website (React)
 
 
-### Getting Started
+### Get Template
 
 ```
-git clone https://github.com/yeb9925/react-spa-boilerplate.git
+git clone https://github.com/yeb9925/react-spa-boilerplate
 cd /react-spa-boilerplate
-npm install
-npm run start
+yarn install
+yarn start
 ```
 
 On the browser go to localhost 8080
