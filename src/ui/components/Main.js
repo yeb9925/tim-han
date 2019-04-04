@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { Links, Welcome, Skill, Project, Writing, About, Contact } from './'
+import { Links, Welcome, About, Email, Project, Writing, Contact } from './'
 
 export default class Main extends Component {
   render() {
     return (
       <div id="components-container">
         <Links />
+        <Email />
         <Welcome />
         <About />
-        <Skill />
         <Project />
         <Writing />
         <Contact />

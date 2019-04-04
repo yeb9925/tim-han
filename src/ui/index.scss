@@ -65,7 +65,7 @@ body {
 
 // Components
 #welcome-container,
-#skill-container,
+#about-container,
 #project-container,
 #writing-container,
 #contact-container {
@@ -149,7 +149,7 @@ body {
 
       .email {
         color: white;
-        text-shadow: 1.5px 0;
+        text-shadow: 1.3px 0;
         margin: 0;
       }
     }
@@ -158,11 +158,6 @@ body {
 
 // About Component
 #about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-
   .about {
     display: flex;
     justify-content: center;
@@ -233,6 +228,23 @@ body {
       width: 23px;
       height: 23px;
       margin: 12px 15px;
+    }
+  }
+}
+
+// Email Component
+#email-container {
+  position: fixed;
+  right: 90px;
+  bottom: 40px;
+
+  .email-icon {
+    list-style: none;
+
+    .mail {
+      fill: #e6f1fe;
+      width: 90px;
+      height: 90px;
     }
   }
 }
