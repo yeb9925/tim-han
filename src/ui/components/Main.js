@@ -7,10 +7,10 @@ export default class Main extends Component {
       <div id="components-container">
         <Links />
         <Welcome />
+        <About />
         <Skill />
         <Project />
         <Writing />
-        <About />
         <Contact />
       </div>
     )

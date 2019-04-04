@@ -1,11 +1,3 @@
-// Constant Color-Theme
-$primary-color: #64B6AC;
-$secondary-color: #C0FDFB;
-$tertiary-color: #DAFFEF;
-$quaternary-color: #5D737E;
-$overall-color: #FCFFFD;
-
-
 // Fade In
 @keyframes fadein {
   from { opacity: 0; }
@@ -40,16 +32,8 @@ $overall-color: #FCFFFD;
 // General Purpose
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: $overall-color;
   margin: 0;
-  background-color: #0e1830;
-}
-
-// Logo 
-#logo {
-  font-size: 40px;
-  border: 4px solid $primary-color;
-  padding: 10px
+  background-color: #0e162f;
 }
 
 // Navigation Component
@@ -59,6 +43,8 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  top: 0;
+  transition: top 0.3s;
 }
 
 .nav-links {
@@ -145,6 +131,8 @@ body {
   .email-me-container {
     display: flex;
     justify-content: center;
+    @include element-fade-in();
+    transition-delay: 600ms;
 
     .email-me {
       display: flex;
@@ -153,7 +141,7 @@ body {
       width: 145px;
       height: 65px;
       border: solid;
-      border-width: 2px;
+      border-width: 4px;
       border-color: #45ce95;
       background-color: #45ce95;
       padding: 1px;
@@ -170,8 +158,50 @@ body {
 
 // About Component
 #about-container {
-  h1, h2 {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-header {
+      color: #e6f1fe;
+      text-shadow: 1.5px 0;
+      font-size: 250%;
+    }
+  }
+
+  .about-description {
+    margin: 10px 28vw;
+
+    .about-paragraph {
+      color: #f0f8fe;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    .skill-list {
+      display: grid;
+      grid-template-columns: minmax(140px, 350px) minmax(140px, 350px);
+      list-style: none;
+      padding: 0;
+      background-color: #0e162f;
+
+      .skill {
+        color: #8a91b2;
+        margin-bottom: 10px;
+      }
+
+      .skill::before {
+        content: "▹";
+        color: #45ce95;
+        margin-right: 10px;
+      }
+    }
   }
 }
 
