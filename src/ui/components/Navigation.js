@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'react-scroll'
 
 export default class Navigation extends Component {
@@ -10,6 +9,11 @@ export default class Navigation extends Component {
   render() {
     return (
       <div id="nav-container">
+        <div className="logo-container">
+          <div className="logo">
+            <img className="logo-image" src="/logo.png"/>
+          </div>
+        </div>
         <nav id="nav-bar">
           <Link to="welcome-container" activeClass="active" spy={true} smooth={true} className="nav-links">Home</Link>
           <Link to="about-container" activeClass="active" spy={true} smooth={true} className="nav-links">About</Link>
@@ -23,8 +27,4 @@ export default class Navigation extends Component {
       </div>
     )
   }
-}
-
-Navigation.propTypes = {
-  children: PropTypes.object
 }

@@ -37,14 +37,29 @@ body {
 }
 
 // Navigation Component
-#nav-bar {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  transition: top 0.3s;
+#nav-container {
+  #nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+
+    .logo {
+      .logo-image {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
 }
 
 .nav-links {
