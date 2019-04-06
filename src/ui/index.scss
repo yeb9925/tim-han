@@ -321,6 +321,34 @@ body {
       color: $secondary-color;
       line-height: 25px;
     }
+
+    .project-details-container {
+      .project-details {
+        display: flex;
+        justify-content: flex-end;
+
+        .project-details-text-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 15px;
+          border: solid;
+          border-width: 4px;
+          border-color: $primary-color;
+          background-color: $primary-color;
+          padding: 1px;
+          border-radius: 10px;
+          margin: 0 5px;
+
+          .project-details-text {
+            color: $overall-color;
+            font-weight: bolder;
+            font-size: 75%;
+          }
+        }
+      }
+    }
   }
 
   .more-project-container {
