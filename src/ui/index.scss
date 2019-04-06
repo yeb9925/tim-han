@@ -147,6 +147,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 14vh;
 
     .first-line {
       color: $primary-color;
@@ -182,7 +183,15 @@ body {
 
   .fourth-line {
     color: $secondary-color;
-    margin: 40px 20vw;
+    margin: 40px 20vw 0;
+    line-height: 25px;
+    @include element-fade-in();
+    transition-delay: 400ms;
+  }
+
+  .fifth-line {
+    color: $secondary-color;
+    margin: 10px 20vw;
     line-height: 25px;
     @include element-fade-in();
     transition-delay: 400ms;
@@ -191,6 +200,7 @@ body {
   .email-me-container {
     display: flex;
     justify-content: center;
+    margin: 40px 0;
     @include element-fade-in();
     transition-delay: 600ms;
 
@@ -260,9 +270,89 @@ body {
   }
 }
 
+// Project Component
+#project-container {
+  height: 140vh;
+
+  .project-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project-header {
+      color: $tertiary-color;
+      text-shadow: 1.5px 0;
+      font-size: 250%;
+    }
+  }
+
+  .project-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10vw;
+    height: 320px;
+
+    .project-image-container {
+      .project-image {
+        width: 470px;
+        height: 320px;
+        border-radius: 20px;
+      }
+    }
+
+    .project-description-one {
+      margin: 20px;
+      max-width: 450px;
+      text-align: right;
+    }
+
+    .project-description-two {
+      margin: 20px;
+      max-width: 450px;
+      text-align: left;
+    }
+
+    .project-title {
+      color: $tertiary-color;
+    }
+
+    .project-text {
+      color: $secondary-color;
+      line-height: 25px;
+    }
+  }
+
+  .more-project-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+
+    .more-project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 240px;
+      height: 65px;
+      border: solid;
+      border-width: 4px;
+      border-color: $primary-color;
+      background-color: $primary-color;
+      padding: 1px;
+      border-radius: 10px;
+
+      .more-project-text {
+        color: $overall-color;
+        text-shadow: 1.3px 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
 // Writing Component
 #writing-container {
-  height: 130vh;
+  height: 140vh;
 
   .writing {
     display: flex;
@@ -326,13 +416,13 @@ body {
   .more-writing-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 40px 0;
 
     .more-writing {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 145px;
+      width: 230px;
       height: 65px;
       border: solid;
       border-width: 4px;
@@ -418,4 +508,3 @@ body {
     }
   }
 }
-

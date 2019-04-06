@@ -8,7 +8,7 @@ export default class Writing extends Component {
           <h1 className="writing-header">Writing<span><hr/></span></h1>
         </div>
         <div className="writing-info-container">
-          <p className="writing-info">{'I\'\m an active writer on Medium writing about instructive contents related to programming for those entering into the coding world and learning more about programming. Currently, I write for multiple publications including '}
+          <p className="writing-info">{'I\'\m an active writer on Medium writing about instructive contents related to programming for those entering into the coding world and/or learning more about programming. Currently, I write for multiple publications including '}
           <span><a className="info" href="https://hackernoon.com" target="_blank" style={{color: '#45ce95', textDecoration: 'none'}}>{'Hackernoon, '}</a></span>
           <span><a className="info" href="https://medium.freecodecamp.org" target="_blank" style={{color: '#45ce95', textDecoration: 'none'}}>{'freeCodeCamp, '}</a></span>
           <span><a className="info" href="https://medium.com/javascript-in-plain-english" target="_blank" style={{color: '#45ce95', textDecoration: 'none'}}>{'JavaScript In Plain English, '}</a></span>
@@ -43,7 +43,7 @@ export default class Writing extends Component {
         </div>
         <div className="more-writing-container">
           <div className="more-writing">
-            <h1 className="more-writing-text"><a href="https://medium.com/@timhancodes" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More</a></h1>
+            <h1 className="more-writing-text"><a href="https://medium.com/@timhancodes" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More Writing</a></h1>
           </div>
         </div>
       </div>
