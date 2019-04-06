@@ -1,19 +1,6 @@
 import React, { Component } from 'react'
 
 export default class About extends Component {
-  componentDidMount() {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = () => {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("nav-bar").style.top = "0";
-      } else {
-        document.getElementById("nav-bar").style.top = "-100px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  }
-
   render() {
     return (
       <div id="about-container">

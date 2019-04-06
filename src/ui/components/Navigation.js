@@ -9,7 +9,7 @@ export default class Navigation extends Component {
   render() {
     return (
       <div id="nav-container">
-        <div className="logo-container">
+        <div id="logo-container">
           <div className="logo">
             <img className="logo-image" src="/logo.png"/>
           </div>

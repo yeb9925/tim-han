@@ -55,10 +55,11 @@ body {
     transition: top 0.3s;
   }
 
-  .logo-container {
-    position: absolute;
+  #logo-container {
+    position: fixed;
     left: 30px;
     top: 20px;
+    transition: top 0.3s;
 
     .logo {
       .logo-image {
