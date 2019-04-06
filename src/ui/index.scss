@@ -3,6 +3,7 @@ $primary-color: #45ce95;
 $secondary-color: #8a91b2;
 $tertiary-color: #e6f1fe;
 $overall-color: #0e162f;
+$footer-color: #020c1b;
 
 // Fade In
 @keyframes fadein {
@@ -94,6 +95,44 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: center;
+}
+
+// Links Component
+#links-container {
+  position: fixed;
+  bottom: 0px;
+
+  .social-media-list {
+    list-style: none;
+
+    .linkedin,
+    .github,
+    .medium,
+    .twitter,
+    .instagram {
+      fill: $secondary-color;
+      width: 23px;
+      height: 23px;
+      margin: 12px 15px;
+    }
+  }
+}
+
+// Email Component
+#email-container {
+  position: fixed;
+  right: 65px;
+  bottom: 35px;
+
+  .email-icon {
+    list-style: none;
+
+    .mail {
+      fill: $tertiary-color;
+      width: 90px;
+      height: 90px;
+    }
+  }
 }
 
 // Welcome Component
@@ -287,6 +326,7 @@ body {
   .more-writing-container {
     display: flex;
     justify-content: center;
+    margin: 20px 0;
 
     .more-writing {
       display: flex;
@@ -362,40 +402,20 @@ body {
   }
 }
 
-// Links Component
-#links-container {
-  position: fixed;
-  bottom: 0px;
+// Footer Component
+#footer-container {
+  display: flex;
+  height: 5vh;
+  flex-direction: column;
+  justify-content: center;
 
-  .social-media-list {
-    list-style: none;
+  .footer-text-container {
+    text-align: center;
+    background-color: $footer-color;
 
-    .linkedin,
-    .github,
-    .medium,
-    .twitter,
-    .instagram {
-      fill: $secondary-color;
-      width: 23px;
-      height: 23px;
-      margin: 12px 15px;
+    .footer-text {
+      color: $secondary-color;
     }
   }
 }
 
-// Email Component
-#email-container {
-  position: fixed;
-  right: 65px;
-  bottom: 35px;
-
-  .email-icon {
-    list-style: none;
-
-    .mail {
-      fill: $tertiary-color;
-      width: 90px;
-      height: 90px;
-    }
-  }
-}

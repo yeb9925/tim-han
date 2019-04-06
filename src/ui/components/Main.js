@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Links, Welcome, About, Email, Project, Writing, Contact } from './'
+import { Links, Welcome, About, Email, Project, Writing, Contact, Footer } from './'
 
 export default class Main extends Component {
   render() {
@@ -12,6 +12,7 @@ export default class Main extends Component {
         <Project />
         <Writing />
         <Contact />
+        <Footer />
       </div>
     )
   }
