@@ -1,3 +1,9 @@
+// Constant Color-Theme
+$primary-color: #45ce95;
+$secondary-color: #8a91b2;
+$tertiary-color: #e6f1fe;
+$overall-color: #0e162f;
+
 // Fade In
 @keyframes fadein {
   from { opacity: 0; }
@@ -33,7 +39,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #0e162f;
+  background-color: $overall-color;
 }
 
 // Navigation Component
@@ -67,7 +73,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 110%;
-  color: white;
+  color: $tertiary-color;
   &:hover,
   &:focus,
   &:active {
@@ -78,7 +84,7 @@ body {
   }
 }
 
-// Components
+// Shared Attributes
 #welcome-container,
 #about-container,
 #project-container,
@@ -104,14 +110,14 @@ body {
     align-items: center;
 
     .first-line {
-      color: #45ce95;
+      color: $primary-color;
       margin-right: 7vw;
       @include element-fade-in();
       transition-delay: 100ms;
     }
   
     .second-line {
-      color: white;
+      color: $tertiary-color;
       margin: 0 7vw 0 0;
       font-size: 430%;
       text-shadow: 1px 0;
@@ -120,7 +126,7 @@ body {
     }
   
     .third-line {
-      color: #8a91b2;
+      color: $secondary-color;
       margin: 0 7vw 0 0;
       font-size: 300%;
       text-shadow: 1px 0;
@@ -136,7 +142,7 @@ body {
   }
 
   .fourth-line {
-    color: #8a91b2;
+    color: $secondary-color;
     margin: 40px 20vw;
     line-height: 25px;
     @include element-fade-in();
@@ -157,12 +163,13 @@ body {
       height: 65px;
       border: solid;
       border-width: 4px;
-      border-color: #45ce95;
+      border-color: $primary-color;
+      background-color: $primary-color;
       padding: 1px;
       border-radius: 10px;
 
       .email {
-        color: #45ce95;
+        color: $overall-color;
         text-shadow: 1.3px 0;
         margin: 0;
       }
@@ -178,7 +185,7 @@ body {
     align-items: center;
 
     .about-header {
-      color: #e6f1fe;
+      color: $tertiary-color;
       text-shadow: 1.5px 0;
       font-size: 250%;
     }
@@ -188,7 +195,7 @@ body {
     margin: 10px 28vw;
 
     .about-paragraph {
-      color: #f0f8fe;
+      color: $tertiary-color;
       line-height: 30px;
       margin: 0;
     }
@@ -198,23 +205,112 @@ body {
       grid-template-columns: minmax(140px, 350px) minmax(140px, 350px);
       list-style: none;
       padding: 0;
-      background-color: #0e162f;
+      background-color: $overall-color;
 
       .skill {
-        color: #8a91b2;
+        color: $secondary-color;
         margin-bottom: 10px;
       }
 
       .skill::before {
         content: "▹";
-        color: #45ce95;
+        color: $primary-color;
         margin-right: 10px;
       }
     }
   }
 }
 
-// Contact component
+// Writing Component
+#writing-container {
+  height: 130vh;
+
+  .writing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .writing-header {
+      color: $tertiary-color;
+      text-shadow: 1.5px 0;
+      font-size: 250%;
+    }
+  }
+
+  .writing-info-container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    .writing-info {
+      color: $secondary-color;
+      line-height: 25px;
+    }
+  }
+
+  .writing-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10vw;
+    height: 280px;
+
+    .writing-image-container {
+      .writing-image {
+        width: 470px;
+        height: 250px;
+        border-radius: 20px;
+      }
+    }
+
+    .writing-description-one {
+      margin: 20px;
+      max-width: 450px;
+      text-align: right;
+    }
+
+    .writing-description-two {
+      margin: 20px;
+      max-width: 450px;
+      text-align: left;
+    }
+
+    .writing-title {
+      color: $tertiary-color;
+    }
+
+    .writing-text {
+      color: $secondary-color;
+      line-height: 25px;
+    }
+  }
+
+  .more-writing-container {
+    display: flex;
+    justify-content: center;
+
+    .more-writing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 145px;
+      height: 65px;
+      border: solid;
+      border-width: 4px;
+      border-color: $primary-color;
+      background-color: $primary-color;
+      padding: 1px;
+      border-radius: 10px;
+
+      .more-writing-text {
+        color: $overall-color;
+        text-shadow: 1.3px 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Contact Component
 #contact-container {
   .contact {
     display: flex;
@@ -222,7 +318,7 @@ body {
     align-items: center;
 
     .contact-header {
-      color: #e6f1fe;
+      color: $tertiary-color;
       text-shadow: 1.5px 0;
       font-size: 250%;
     }
@@ -232,7 +328,7 @@ body {
     margin: 10px 28vw;
 
     .contact-paragraph {
-      color: #8a91b2;
+      color: $secondary-color;
       text-align: center;
       line-height: 30px;
       margin: 0;
@@ -252,12 +348,13 @@ body {
       height: 65px;
       border: solid;
       border-width: 4px;
-      border-color: #45ce95;
+      border-color: $primary-color;
+      background-color: $primary-color;
       padding: 1px;
       border-radius: 10px;
 
       .contact-me {
-        color: #45ce95;
+        color: $overall-color;
         text-shadow: 1.3px 0;
         margin: 0;
       }
@@ -278,7 +375,7 @@ body {
     .medium,
     .twitter,
     .instagram {
-      fill: #8a91b2;
+      fill: $secondary-color;
       width: 23px;
       height: 23px;
       margin: 12px 15px;
@@ -289,14 +386,14 @@ body {
 // Email Component
 #email-container {
   position: fixed;
-  right: 90px;
-  bottom: 40px;
+  right: 65px;
+  bottom: 35px;
 
   .email-icon {
     list-style: none;
 
     .mail {
-      fill: #e6f1fe;
+      fill: $tertiary-color;
       width: 90px;
       height: 90px;
     }

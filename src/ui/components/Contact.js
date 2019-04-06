@@ -14,7 +14,7 @@ export default class Contact extends Component {
         </div>
         <div className="contact-email-container">
           <div className="contact-email">
-            <h1 className="scontact-me"><a href="mailto:seungt.han@gmail.com" style={{textDecoration: 'none', color: '#45ce95'}}>Contact</a></h1>
+            <h1 className="contact-me"><a href="mailto:seungt.han@gmail.com" style={{textDecoration: 'none', color: '#0e162f'}}>Contact</a></h1>
           </div>
         </div>
       </div>
