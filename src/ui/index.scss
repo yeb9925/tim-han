@@ -231,6 +231,8 @@ body {
 
 // About Component
 #about-container {
+  background-color: $mobile-nav-color;
+
   .about {
     display: flex;
     justify-content: center;
@@ -257,7 +259,7 @@ body {
       grid-template-columns: minmax(140px, 350px) minmax(140px, 350px);
       list-style: none;
       padding: 0;
-      background-color: $overall-color;
+      background-color: $mobile-nav-color;
 
       .skill {
         color: $secondary-color;
@@ -343,12 +345,42 @@ body {
           padding: 1px;
           border-radius: 10px;
           margin: 0 5px;
+        }
 
-          .project-details-text {
-            color: $overall-color;
-            font-weight: bolder;
-            font-size: 75%;
-          }
+        .project-details-text-container-med {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 15px;
+          border: solid;
+          border-width: 4px;
+          border-color: $primary-color;
+          background-color: $primary-color;
+          padding: 1px;
+          border-radius: 10px;
+          margin: 0 5px;
+        }
+
+        .project-details-text-container-long {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 90px;
+          height: 15px;
+          border: solid;
+          border-width: 4px;
+          border-color: $primary-color;
+          background-color: $primary-color;
+          padding: 1px;
+          border-radius: 10px;
+          margin: 0 5px;
+        }
+
+        .project-details-text {
+          color: $overall-color;
+          font-weight: bolder;
+          font-size: 75%;
         }
       }
     }
@@ -560,7 +592,7 @@ body {
 
       #close-button-container {
         position: fixed;
-        top: 70px;
+        top: 75px;
 
         .close-button {
           .close-button-image {
@@ -599,7 +631,7 @@ body {
   }
 
   #welcome-container {
-    padding: 5vh 8vw;
+    padding: 6vh 8vw 0 8vw;
 
     .first-paragraph-container {
       padding: 0;
@@ -675,6 +707,117 @@ body {
 
         .skill {
           font-size: 200%;
+        }
+      }
+    }
+  }
+
+  #project-container {
+    height: 150vh;
+
+    .project-header-container {
+      .project-header {
+        font-size: 450%;
+        margin-bottom: 0;
+      }
+    }
+
+    .project-one {
+      flex-direction: column;
+      height: 55vh;
+      margin: 20px 10vw 100px 10vw;
+
+      .project-image-container {
+        .project-image {
+          width: 800px;
+          height: 600px;
+        }
+      }
+
+      .project-description-one {
+        max-width: none;
+
+        .project-featured {
+          font-size: 200%;
+          margin: 0;
+        }
+
+        .project-title {
+          font-size: 250%;
+          margin: 20px 0;
+        }
+
+        .project-text {
+          font-size: 200%;
+          line-height: 40px;
+        }
+      }
+
+      .project-description-two {
+        max-width: none;
+
+        .project-featured {
+          font-size: 200%;
+          margin: 0;
+        }
+
+        .project-title {
+          font-size: 250%;
+          margin: 20px 0;
+        }
+
+        .project-text {
+          font-size: 200%;
+          line-height: 40px;
+        }
+      }
+
+      .project-details-container {
+        .project-details {
+          .project-details-text-container {
+            width: 90px;
+            height: 35px;
+
+            .project-details-text {
+              text-shadow: 1px 0;
+              font-size: 150%;
+            }
+          }
+
+          .project-details-text-container-med {
+            width: 120px;
+            height: 35px;
+
+            .project-details-text {
+              text-shadow: 1px 0;
+              font-size: 150%;
+            }
+          }
+
+          .project-details-text-container-long {
+            width: 180px;
+            height: 35px;
+
+            .project-details-text {
+              text-shadow: 1px 0;
+              font-size: 150%;
+            }
+          }
+        }
+      }
+    }
+
+    .more-project-container {
+      margin: 0;
+
+      .more-project {
+        width: 300px;
+        height: 120px;
+        border-radius: 35px;
+
+        .more-project-text {
+          font-size: 350%;
+          text-shadow: 1.5px 0;
         }
       }
     }

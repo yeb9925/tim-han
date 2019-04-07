@@ -20,7 +20,9 @@ export default class Navigation extends Component {
         <div id="nav-container">
           <div id="logo-container">
             <div className="logo">
-              <img className="logo-image" src="/logo.png"/>
+              <a href="/">
+                <img className="logo-image" src="/logo.png"/>
+              </a>
             </div>
           </div>
           <div id="hamburger-container" onClick={this.onMenuClick}>

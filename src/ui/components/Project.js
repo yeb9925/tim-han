@@ -22,56 +22,97 @@ export default class Project extends Component {
                 <div className="project-details-text-container">
                   <p className="project-details-text">React</p>
                 </div>
-                <div className="project-details-text-container" style={{width: '50px'}}>
+                <div className="project-details-text-container-med">
                   <p className="project-details-text">Express</p>
                 </div>
                 <div className="project-details-text-container">
                   <p className="project-details-text">Sass</p>
                 </div>
-                <div className="project-details-text-container" style={{width: '55px'}}>
+                <div className="project-details-text-container-med">
                   <p className="project-details-text">Webpack</p>
                 </div>
-                <div className="project-details-text-container" style={{width: '90px'}}>
+                <div className="project-details-text-container-long">
                   <p className="project-details-text">PetFinder API</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="project-one">
-          <div className="project-description-two">
-            <h3 className="project-featured" style={{color: '#45ce95', textDecoration: 'none'}}>Featured Project</h3>
-            <h2 className="project-title"><span><a href="https://game-night-friends.herokuapp.com" target="_blank" style={{color: '#e6f1fe', textDecoration: 'none'}}>Game Night</a></span></h2>
-            <p className="project-text">Web App made to help bring table top games and real-time interaction together for friends to enjoy game night online.</p>
-            <div className="project-details-container">
-              <div className="project-details" style={{justifyContent: 'flex-start'}}>
-                <div className="project-details-text-container">
-                  <p className="project-details-text">React</p>
+        {
+          window.innerWidth < 1200
+            ? (
+              <div className="project-one">
+                <div className="project-image-container">
+                  <a href="https://game-night-friends.herokuapp.com" target="_blank">
+                    <img className="project-image" src="/project-images/project2.png" />
+                  </a>
                 </div>
-                <div className="project-details-text-container" style={{width: '50px'}}>
-                  <p className="project-details-text">Express</p>
-                </div>
-                <div className="project-details-text-container">
-                  <p className="project-details-text">Sass</p>
-                </div>
-                <div className="project-details-text-container" style={{width: '55px'}}>
-                  <p className="project-details-text">WebRTC</p>
-                </div>
-                <div className="project-details-text-container" style={{width: '65px'}}>
-                  <p className="project-details-text">socket.io</p>
-                </div>
-                <div className="project-details-text-container" style={{width: '85px'}}>
-                  <p className="project-details-text">PostgreSQL</p>
+                <div className="project-description-two">
+                  <h3 className="project-featured" style={{color: '#45ce95', textDecoration: 'none'}}>Featured Project</h3>
+                  <h2 className="project-title"><span><a href="https://game-night-friends.herokuapp.com" target="_blank" style={{color: '#e6f1fe', textDecoration: 'none'}}>Game Night</a></span></h2>
+                  <p className="project-text">Web App made to help bring table top games and real-time interaction together for friends to enjoy game night online.</p>
+                  <div className="project-details-container">
+                    <div className="project-details" style={{justifyContent: 'flex-start'}}>
+                      <div className="project-details-text-container">
+                        <p className="project-details-text">React</p>
+                      </div>
+                      <div className="project-details-text-container-med">
+                        <p className="project-details-text">Express</p>
+                      </div>
+                      <div className="project-details-text-container">
+                        <p className="project-details-text">Sass</p>
+                      </div>
+                      <div className="project-details-text-container-med">
+                        <p className="project-details-text">WebRTC</p>
+                      </div>
+                      <div className="project-details-text-container-med">
+                        <p className="project-details-text">socket</p>
+                      </div>
+                      <div className="project-details-text-container-long">
+                        <p className="project-details-text">PostgreSQL</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="project-image-container">
-            <a href="https://game-night-friends.herokuapp.com" target="_blank">
-              <img className="project-image" src="/project-images/project2.png" />
-            </a>
-          </div>
-        </div>
+            )
+            : (
+              <div className="project-one">
+                <div className="project-description-two">
+                  <h3 className="project-featured" style={{color: '#45ce95', textDecoration: 'none'}}>Featured Project</h3>
+                  <h2 className="project-title"><span><a href="https://game-night-friends.herokuapp.com" target="_blank" style={{color: '#e6f1fe', textDecoration: 'none'}}>Game Night</a></span></h2>
+                  <p className="project-text">Web App made to help bring table top games and real-time interaction together for friends to enjoy game night online.</p>
+                  <div className="project-details-container">
+                    <div className="project-details" style={{justifyContent: 'flex-start'}}>
+                      <div className="project-details-text-container">
+                        <p className="project-details-text">React</p>
+                      </div>
+                      <div className="project-details-text-container-med">
+                        <p className="project-details-text">Express</p>
+                      </div>
+                      <div className="project-details-text-container">
+                        <p className="project-details-text">Sass</p>
+                      </div>
+                      <div className="project-details-text-container-med">
+                        <p className="project-details-text">WebRTC</p>
+                      </div>
+                      <div className="project-details-text-container-med">
+                        <p className="project-details-text">socket</p>
+                      </div>
+                      <div className="project-details-text-container-long">
+                        <p className="project-details-text">PostgreSQL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="project-image-container">
+                  <a href="https://game-night-friends.herokuapp.com" target="_blank">
+                    <img className="project-image" src="/project-images/project2.png" />
+                  </a>
+                </div>
+              </div>
+            )
+        }
         <div className="more-project-container">
           <div className="more-project">
             <h1 className="more-project-text"><a href="https://github.com/yeb9925" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More</a></h1>
