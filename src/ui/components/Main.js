@@ -3,25 +3,48 @@ import { Links, Welcome, About, Email, Project, Writing, Contact, Footer } from 
 
 export default class Main extends Component {
   componentDidMount() {
-    var prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.pageYOffset
+    let isMobile = window.innerWidth < 1000
+
     window.onscroll = () => {
-      var currentScrollPos = window.pageYOffset;
+      let currentScrollPos = window.pageYOffset
+
       if (prevScrollpos > currentScrollPos) {
-        document.getElementById("nav-bar").style.top = "0";
-        document.getElementById("logo-container").style.top = "20px";
+        if (isMobile) {
+          document.getElementById("nav-bar").style.top = "0"
+          document.getElementById("logo-container").style.top = "55px"
+          document.getElementById("hamburger-container").style.top = "90px"
+        } else {
+          document.getElementById("nav-bar").style.top = "0"
+          document.getElementById("logo-container").style.top = "20px"
+        }
       } else {
-        document.getElementById("nav-bar").style.top = "-100px";
-        document.getElementById("logo-container").style.top = "-100px";
+        if (isMobile) {
+          document.getElementById("nav-bar").style.top = "-170px"
+          document.getElementById("logo-container").style.top = "-170px"
+          document.getElementById("hamburger-container").style.top = "-170px"
+        } else {
+          document.getElementById("nav-bar").style.top = "-100px"
+          document.getElementById("logo-container").style.top = "-100px"
+        }
       }
-      prevScrollpos = currentScrollPos;
+      prevScrollpos = currentScrollPos
     }
   }
 
   render() {
     return (
       <div id="components-container">
-        <Links />
-        <Email />
+        {
+          window.innerWidth < 1000
+            ? null
+            : <Links />
+        }
+        {
+          window.innerWidth < 1000
+            ? null
+            : <Email />
+        }
         <Welcome />
         <About />
         <Project />

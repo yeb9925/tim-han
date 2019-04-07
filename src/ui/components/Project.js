@@ -74,7 +74,7 @@ export default class Project extends Component {
         </div>
         <div className="more-project-container">
           <div className="more-project">
-            <h1 className="more-project-text"><a href="https://github.com/yeb9925" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More Project</a></h1>
+            <h1 className="more-project-text"><a href="https://github.com/yeb9925" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More</a></h1>
           </div>
         </div>
       </div>

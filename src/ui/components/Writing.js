@@ -43,7 +43,7 @@ export default class Writing extends Component {
         </div>
         <div className="more-writing-container">
           <div className="more-writing">
-            <h1 className="more-writing-text"><a href="https://medium.com/@timhancodes" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More Writing</a></h1>
+            <h1 className="more-writing-text"><a href="https://medium.com/@timhancodes" target="_blank" style={{color: '#0e162f', textDecoration: 'none'}}>More</a></h1>
           </div>
         </div>
       </div>

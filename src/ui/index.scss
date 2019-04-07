@@ -3,6 +3,7 @@ $primary-color: #45ce95;
 $secondary-color: #8a91b2;
 $tertiary-color: #e6f1fe;
 $overall-color: #0e162f;
+$mobile-nav-color: #172a45;
 $footer-color: #020c1b;
 
 // Fade In
@@ -76,6 +77,7 @@ body {
   font-weight: bold;
   font-size: 110%;
   color: $tertiary-color;
+
   &:hover,
   &:focus,
   &:active {
@@ -361,7 +363,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 240px;
+      width: 150px;
       height: 65px;
       border: solid;
       border-width: 4px;
@@ -451,7 +453,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 230px;
+      width: 150px;
       height: 65px;
       border: solid;
       border-width: 4px;
@@ -534,6 +536,65 @@ body {
 
     .footer-text {
       color: $secondary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #nav-container {
+    #nav-bar {
+      flex-direction: column;
+      right: 0;
+      width: 600px;
+      height: 100vh;
+      background-color: $mobile-nav-color;
+
+      .nav-links {
+        font-size: 300%;
+        margin: 12% 5%;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      #close-button-container {
+        position: fixed;
+        top: 70px;
+
+        .close-button {
+          .close-button-image {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+    }
+
+    #logo-container {
+      left: 55px;
+      top: 55px;
+      
+      .logo {
+        .logo-image {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+
+    #hamburger-container {
+      position: fixed;
+      right: 60px;
+      top: 90px;
+      transition: top 0.3s;
+
+      .hamburger {
+        .hamburger-image {
+          width: 100px;
+          height: 80px;
+        }
+      }
     }
   }
 }
