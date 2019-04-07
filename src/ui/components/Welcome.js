@@ -10,7 +10,7 @@ export default class Welcome extends Component {
             <h1 className="second-line">Tim Han</h1>
             <h1 className="third-line">Software Engineer</h1>
           </div>
-          <div>
+          <div className="profile-image-container">
             <img className="profile-pic" src="profile.png"/>
           </div>
         </div>

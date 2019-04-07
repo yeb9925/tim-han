@@ -4,28 +4,26 @@ import { Links, Welcome, About, Email, Project, Writing, Contact, Footer } from 
 export default class Main extends Component {
   componentDidMount() {
     let prevScrollpos = window.pageYOffset
-    let isMobile = window.innerWidth < 1000
+    let isMobile = window.innerWidth < 1200
 
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset
 
       if (prevScrollpos > currentScrollPos) {
         if (isMobile) {
-          document.getElementById("nav-bar").style.top = "0"
-          document.getElementById("logo-container").style.top = "55px"
-          document.getElementById("hamburger-container").style.top = "90px"
+          document.getElementById('logo-container').style.top = '55px'
+          document.getElementById('hamburger-container').style.top = '90px'
         } else {
-          document.getElementById("nav-bar").style.top = "0"
-          document.getElementById("logo-container").style.top = "20px"
+          document.getElementById('nav-bar').style.top = '0'
+          document.getElementById('logo-container').style.top = '20px'
         }
       } else {
         if (isMobile) {
-          document.getElementById("nav-bar").style.top = "-170px"
-          document.getElementById("logo-container").style.top = "-170px"
-          document.getElementById("hamburger-container").style.top = "-170px"
+          document.getElementById('logo-container').style.top = '-170px'
+          document.getElementById('hamburger-container').style.top = '-170px'
         } else {
-          document.getElementById("nav-bar").style.top = "-100px"
-          document.getElementById("logo-container").style.top = "-100px"
+          document.getElementById('nav-bar').style.top = '-100px'
+          document.getElementById('logo-container').style.top = '-100px'
         }
       }
       prevScrollpos = currentScrollPos
@@ -36,12 +34,12 @@ export default class Main extends Component {
     return (
       <div id="components-container">
         {
-          window.innerWidth < 1000
+          window.innerWidth < 1200
             ? null
             : <Links />
         }
         {
-          window.innerWidth < 1000
+          window.innerWidth < 1200
             ? null
             : <Email />
         }

@@ -540,7 +540,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   #nav-container {
     #nav-bar {
       flex-direction: column;
@@ -585,14 +585,96 @@ body {
 
     #hamburger-container {
       position: fixed;
-      right: 60px;
-      top: 90px;
+      right: 70px;
+      top: 85px;
       transition: top 0.3s;
 
       .hamburger {
         .hamburger-image {
           width: 100px;
           height: 80px;
+        }
+      }
+    }
+  }
+
+  #welcome-container {
+    padding: 5vh 8vw;
+
+    .first-paragraph-container {
+      padding: 0;
+      display: block;
+
+      .second-line {
+        font-size: 750%;
+      }
+
+      .third-line{
+        font-size: 450%;
+      }
+    }
+
+    .profile-image-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+
+      .profile-pic {
+        width: 370px;
+        height: 370px;
+      }
+    }
+
+    .fourth-line {
+      font-size: 200%;
+      line-height: 45px;
+      margin: 20px 0;
+    }
+
+    .fifth-line {
+      font-size: 200%;
+      line-height: 45px;
+      margin: 10px 0;
+    }
+
+    .email-me-container {
+      margin: 60px 0;
+
+      .email-me {
+        width: 300px;
+        height: 120px;
+        border-radius: 35px;
+
+        .email {
+          font-size: 350%;
+          text-shadow: 1.5px 0;
+        }
+      }
+    }
+  }
+
+  #about-container {
+    .about {
+      .about-header {
+        font-size: 450%;
+        margin-bottom: 0;
+      }
+    }
+
+    .about-description {
+      padding: 0 8vw;
+      margin: 0 0 40px 0;
+
+      .about-paragraph {
+        font-size: 210%;
+        line-height: 50px;
+      }
+
+      .skill-list {
+        grid-template-columns: minmax(140px, 500px) minmax(140px, 500px);
+
+        .skill {
+          font-size: 200%;
         }
       }
     }
