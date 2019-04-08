@@ -124,8 +124,8 @@ body {
 // Email Component
 #email-container {
   position: fixed;
-  right: 65px;
-  bottom: 35px;
+  right: 60px;
+  bottom: 15px;
 
   .email-icon {
     list-style: none;
@@ -416,6 +416,7 @@ body {
 // Writing Component
 #writing-container {
   height: 140vh;
+  background-color: $mobile-nav-color;
 
   .writing {
     display: flex;
@@ -434,7 +435,7 @@ body {
     margin-right: 20vw;
 
     .writing-info {
-      color: $secondary-color;
+      color: $tertiary-color;
       line-height: 25px;
     }
   }
@@ -816,6 +817,94 @@ body {
         border-radius: 35px;
 
         .more-project-text {
+          font-size: 350%;
+          text-shadow: 1.5px 0;
+        }
+      }
+    }
+  }
+
+  #writing-container {
+    height: 150vh;
+
+    .writing {
+      .writing-header {
+        font-size: 450%;
+        margin-bottom: 0;
+      }
+    }
+
+    .writing-info-container {
+      padding: 0 8vw;
+      margin-left: 0;
+      margin-right: 0;
+
+      .writing-info {
+        font-size: 200%;
+        line-height: 40px;
+      }
+    }
+
+    .writing-one {
+      flex-direction: column;
+      height: 40vh;
+      margin: 40px 10vw 25px 10vw;
+
+      .writing-image-container {
+        .writing-image {
+          width: 800px;
+          height: 400px;
+        }
+      }
+
+      .writing-description-one {
+        max-width: none;
+
+        .writing-publication {
+          font-size: 200%;
+          margin: 0;
+        }
+
+        .writing-title {
+          font-size: 250%;
+          margin: 20px 0;
+        }
+
+        .writing-text {
+          font-size: 200%;
+          line-height: 40px;
+        }
+      }
+
+      .writing-description-two {
+        max-width: none;
+
+        .writing-publication {
+          font-size: 200%;
+          margin: 0;
+        }
+
+        .writing-title {
+          font-size: 250%;
+          margin: 20px 0;
+        }
+
+        .writing-text {
+          font-size: 200%;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .more-writing-container {
+      margin: 0;
+
+      .more-writing {
+        width: 300px;
+        height: 120px;
+        border-radius: 35px;
+
+        .more-writing-text {
           font-size: 350%;
           text-shadow: 1.5px 0;
         }
