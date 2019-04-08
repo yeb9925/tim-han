@@ -854,4 +854,36 @@ body {
       }
     }
   }
+
+  #footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 12vh;
+    background-color: $footer-color;
+
+    .footer-logos-container {
+      display: flex;
+      justify-content: center;
+
+      .logo {
+        .linkedin,
+        .github,
+        .medium,
+        .twitter,
+        .instagram {
+          fill: $secondary-color;
+          width: 50px;
+          height: 50px;
+          margin: 35px 15px 10px;
+        }
+      }
+    }
+
+    .footer-text-container {
+      .footer-text {
+        font-size: 180%;
+      }
+    }
+  }
 }
