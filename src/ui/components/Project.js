@@ -41,7 +41,7 @@ export default class Project extends Component {
         {
           window.innerWidth < 1200
             ? (
-              <div className="project-one">
+              <div className="project-one" style={{marginBottom: '80px'}}>
                 <div className="project-image-container">
                   <a href="https://game-night-friends.herokuapp.com" target="_blank">
                     <img className="project-image" src="/project-images/project2.png" />
