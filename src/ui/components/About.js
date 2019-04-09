@@ -36,7 +36,7 @@ export default class About extends Component {
             <li className="skill">React & Vue</li>
             <li className="skill">HTML & CSS</li>
             <li className="skill">Neo4J</li>
-            <li className="skill">Kafka/Kafka Manager</li>
+            <li className="skill">Kafka</li>
             <li className="skill">AWS</li>
             <li className="skill">Jenkins</li>
           </ul>

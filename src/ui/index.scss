@@ -659,14 +659,14 @@ body {
     }
 
     .fourth-line {
-      font-size: 200%;
-      line-height: 45px;
+      font-size: 240%;
+      line-height: 50px;
       margin: 20px 0;
     }
 
     .fifth-line {
-      font-size: 200%;
-      line-height: 45px;
+      font-size: 240%;
+      line-height: 50px;
       margin: 10px 0;
     }
 
@@ -699,15 +699,15 @@ body {
       margin: 0 0 40px 0;
 
       .about-paragraph {
-        font-size: 210%;
+        font-size: 240%;
         line-height: 50px;
       }
 
       .skill-list {
-        grid-template-columns: minmax(140px, 500px) minmax(140px, 500px);
+        grid-template-columns: minmax(140px, 550px) minmax(140px, 550px);
 
         .skill {
-          font-size: 200%;
+          font-size: 220%;
         }
       }
     }
@@ -739,18 +739,18 @@ body {
         max-width: none;
 
         .project-featured {
-          font-size: 200%;
+          font-size: 250%;
           margin: 0;
         }
 
         .project-title {
-          font-size: 250%;
+          font-size: 280%;
           margin: 20px 0;
         }
 
         .project-text {
-          font-size: 200%;
-          line-height: 40px;
+          font-size: 230%;
+          line-height: 45px;
         }
       }
 
@@ -758,18 +758,18 @@ body {
         max-width: none;
 
         .project-featured {
-          font-size: 200%;
+          font-size: 250%;
           margin: 0;
         }
 
         .project-title {
-          font-size: 250%;
+          font-size: 280%;
           margin: 20px 0;
         }
 
         .project-text {
-          font-size: 200%;
-          line-height: 40px;
+          font-size: 230%;
+          line-height: 45px;
         }
       }
 
@@ -840,8 +840,8 @@ body {
       margin-right: 0;
 
       .writing-info {
-        font-size: 200%;
-        line-height: 40px;
+        font-size: 250%;
+        line-height: 50px;
       }
     }
 
@@ -861,18 +861,18 @@ body {
         max-width: none;
 
         .writing-publication {
-          font-size: 200%;
+          font-size: 250%;
           margin: 0;
         }
 
         .writing-title {
-          font-size: 250%;
+          font-size: 280%;
           margin: 20px 0;
         }
 
         .writing-text {
-          font-size: 200%;
-          line-height: 40px;
+          font-size: 230%;
+          line-height: 45px;
         }
       }
 
@@ -880,18 +880,18 @@ body {
         max-width: none;
 
         .writing-publication {
-          font-size: 200%;
+          font-size: 250%;
           margin: 0;
         }
 
         .writing-title {
-          font-size: 250%;
+          font-size: 280%;
           margin: 20px 0;
         }
 
         .writing-text {
-          font-size: 200%;
-          line-height: 40px;
+          font-size: 230%;
+          line-height: 45px;
         }
       }
     }
@@ -915,7 +915,7 @@ body {
   #contact-container {
     .contact {
       .contact-header {
-        font-size: 450%;
+        font-size: 480%;
       }
     }
 
@@ -923,7 +923,7 @@ body {
       margin: 10px 10vw;
 
       .contact-paragraph {
-        font-size: 250%;
+        font-size: 270%;
         line-height: 50px;
       }
     }
@@ -971,7 +971,7 @@ body {
 
     .footer-text-container {
       .footer-text {
-        font-size: 180%;
+        font-size: 200%;
       }
     }
   }
