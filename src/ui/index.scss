@@ -632,8 +632,8 @@ body {
   }
 
   #welcome-container {
-    height: 110vh;
-    padding: 6vh 8vw 0 8vw;
+    height: 100vh;
+    padding: 10vh 8vw 0 8vw;
 
     .first-paragraph-container {
       padding: 0;
@@ -715,7 +715,7 @@ body {
   }
 
   #project-container {
-    height: 170vh;
+    height: 155vh;
 
     .project-header-container {
       .project-header {
@@ -726,7 +726,7 @@ body {
 
     .project-one {
       flex-direction: column;
-      height: 55vh;
+      height: 60vh;
       margin: 20px 10vw 35px 10vw;
 
       .project-image-container {
@@ -740,17 +740,17 @@ body {
         max-width: none;
 
         .project-featured {
-          font-size: 250%;
+          font-size: 240%;
           margin: 0;
         }
 
         .project-title {
-          font-size: 280%;
+          font-size: 270%;
           margin: 20px 0;
         }
 
         .project-text {
-          font-size: 230%;
+          font-size: 220%;
           line-height: 45px;
         }
       }
@@ -759,17 +759,17 @@ body {
         max-width: none;
 
         .project-featured {
-          font-size: 250%;
+          font-size: 240%;
           margin: 0;
         }
 
         .project-title {
-          font-size: 280%;
+          font-size: 270%;
           margin: 20px 0;
         }
 
         .project-text {
-          font-size: 230%;
+          font-size: 220%;
           line-height: 45px;
         }
       }
@@ -841,14 +841,14 @@ body {
       margin-right: 0;
 
       .writing-info {
-        font-size: 250%;
+        font-size: 240%;
         line-height: 50px;
       }
     }
 
     .writing-one {
       flex-direction: column;
-      height: 40vh;
+      height: 45vh;
       margin: 40px 10vw 25px 10vw;
 
       .writing-image-container {
@@ -862,17 +862,17 @@ body {
         max-width: none;
 
         .writing-publication {
-          font-size: 250%;
+          font-size: 240%;
           margin: 0;
         }
 
         .writing-title {
-          font-size: 280%;
+          font-size: 270%;
           margin: 20px 0;
         }
 
         .writing-text {
-          font-size: 230%;
+          font-size: 220%;
           line-height: 45px;
         }
       }
@@ -881,17 +881,17 @@ body {
         max-width: none;
 
         .writing-publication {
-          font-size: 250%;
+          font-size: 240%;
           margin: 0;
         }
 
         .writing-title {
-          font-size: 280%;
+          font-size: 270%;
           margin: 20px 0;
         }
 
         .writing-text {
-          font-size: 230%;
+          font-size: 220%;
           line-height: 45px;
         }
       }

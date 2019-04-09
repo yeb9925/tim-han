@@ -32,7 +32,7 @@ export default class Writing extends Component {
         {
           window.innerWidth < 1200
             ? (
-              <div className="writing-one" style={{marginBottom: '60px'}}>
+              <div className="writing-one">
                 <div className="writing-image-container">
                   <a href="https://hackernoon.com/3-programming-languages-to-learn-in-2019-2eb035936f65" target="_blank">
                     <img className="writing-image" src="./writing-images/writing2.png" />
