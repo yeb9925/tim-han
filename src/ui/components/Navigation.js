@@ -21,13 +21,13 @@ export default class Navigation extends Component {
           <div id="logo-container">
             <div className="logo">
               <a href="/">
-                <img className="logo-image" src="/logo.png"/>
+                <img className="logo-image" src="./logo.png"/>
               </a>
             </div>
           </div>
           <div id="hamburger-container" onClick={this.onMenuClick}>
             <div className="hamburger">
-              <img className="hamburger-image" src="/mobile-assets/hamburger.png"/>
+              <img className="hamburger-image" src="./mobile-assets/hamburger.png"/>
             </div>
           </div>
           {
@@ -36,7 +36,7 @@ export default class Navigation extends Component {
                 <nav id="nav-bar">
                   <div id="close-button-container" onClick={this.onMenuClick}>
                     <div className="close-button">
-                      <img className="close-button-image" src="/mobile-assets/mobile-close-button.png"/>
+                      <img className="close-button-image" src="./mobile-assets/mobile-close-button.png"/>
                     </div>
                   </div>
                   <Link to="welcome-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Home</Link>
@@ -58,7 +58,7 @@ export default class Navigation extends Component {
         <div id="nav-container">
           <div id="logo-container">
             <div className="logo">
-              <img className="logo-image" src="/logo.png"/>
+              <img className="logo-image" src="./logo.png"/>
             </div>
           </div>
           <nav id="nav-bar">

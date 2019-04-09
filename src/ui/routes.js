@@ -4,15 +4,16 @@ import { Route, Switch } from 'react-router-dom'
 
 import { Navigation, Main } from './components'
 
+import config from './config'
 import history from './history'
 
 export default class Routes extends Component {
   render() {
     return (
-      <Router history={history}>
+      <Router history={history} basename={config.baseUrl}>
         <Navigation>
           <Switch>
-            <Route exact path="/" component={Main} />
+            <Route path="*" component={Main} />
           </Switch>
         </Navigation>
       </Router>

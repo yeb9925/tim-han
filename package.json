@@ -6,7 +6,9 @@
   "homepage": "https://yeb9925.github.io/portfolio-page/",
   "scripts": {
     "start": "npm run build-watch & nodemon src/server",
-    "build-watch": "webpack -w"
+    "build-watch": "webpack -w",
+    "predeploy": "webpack",
+    "deploy": "gh-pages -d src/public"
   },
   "keywords": [],
   "author": "Tim",
@@ -19,6 +21,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.7.2",
     "nodemon": "^1.13.3",
     "sass-loader": "^6.0.6",

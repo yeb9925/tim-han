@@ -20,7 +20,7 @@ export default class Writing extends Component {
         <div className="writing-one">
           <div className="writing-image-container">
             <a href="https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060" target="_blank">
-              <img className="writing-image" src="/writing-images/writing1.png" />
+              <img className="writing-image" src="./writing-images/writing1.png" />
             </a>
           </div>
           <div className="writing-description-one">
@@ -35,7 +35,7 @@ export default class Writing extends Component {
               <div className="writing-one" style={{marginBottom: '60px'}}>
                 <div className="writing-image-container">
                   <a href="https://hackernoon.com/3-programming-languages-to-learn-in-2019-2eb035936f65" target="_blank">
-                    <img className="writing-image" src="/writing-images/writing2.png" />
+                    <img className="writing-image" src="./writing-images/writing2.png" />
                   </a>
                 </div>
                 <div className="writing-description-two">
@@ -54,7 +54,7 @@ export default class Writing extends Component {
                 </div>
                 <div className="writing-image-container">
                   <a href="https://hackernoon.com/3-programming-languages-to-learn-in-2019-2eb035936f65" target="_blank">
-                    <img className="writing-image" src="/writing-images/writing2.png" />
+                    <img className="writing-image" src="./writing-images/writing2.png" />
                   </a>
                 </div>
               </div>

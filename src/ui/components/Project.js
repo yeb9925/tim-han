@@ -10,7 +10,7 @@ export default class Project extends Component {
         <div className="project-one">
           <div className="project-image-container">
             <a href="http://koreank9rescue.org" target="_blank">
-              <img className="project-image" src="/project-images/project1.png" />
+              <img className="project-image" src="./project-images/project1.png" />
             </a>
           </div>
           <div className="project-description-one">
@@ -44,7 +44,7 @@ export default class Project extends Component {
               <div className="project-one" style={{marginBottom: '80px'}}>
                 <div className="project-image-container">
                   <a href="https://game-night-friends.herokuapp.com" target="_blank">
-                    <img className="project-image" src="/project-images/project2.png" />
+                    <img className="project-image" src="./project-images/project2.png" />
                   </a>
                 </div>
                 <div className="project-description-two">
@@ -107,7 +107,7 @@ export default class Project extends Component {
                 </div>
                 <div className="project-image-container">
                   <a href="https://game-night-friends.herokuapp.com" target="_blank">
-                    <img className="project-image" src="/project-images/project2.png" />
+                    <img className="project-image" src="./project-images/project2.png" />
                   </a>
                 </div>
               </div>
