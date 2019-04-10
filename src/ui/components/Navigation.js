@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 
-import config from '../config'
-
 export default class Navigation extends Component {
   constructor(props) {
     super(props)
@@ -22,7 +20,7 @@ export default class Navigation extends Component {
         <div id="nav-container">
           <div id="logo-container">
             <div className="logo">
-              <a href={config.baseUrl}>
+              <a href="https://yeb9925.github.io/portfolio-page/">
                 <img className="logo-image" src="./logo.png"/>
               </a>
             </div>
@@ -60,7 +58,7 @@ export default class Navigation extends Component {
         <div id="nav-container">
           <div id="logo-container">
             <div className="logo">
-              <a href={config.baseUrl}>
+              <a href="https://yeb9925.github.io/portfolio-page/">
                 <img className="logo-image" src="./logo.png"/>
               </a>
             </div>
