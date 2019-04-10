@@ -30877,7 +30877,7 @@ var Navigation = function (_Component) {
               { className: 'logo' },
               _react2.default.createElement(
                 'a',
-                { href: 'https://yeb9925.github.io/portfolio-page/' },
+                { href: 'https://yeb9925.github.io/tim-han/' },
                 _react2.default.createElement('img', { className: 'logo-image', src: './logo.png' })
               )
             )
@@ -30943,7 +30943,7 @@ var Navigation = function (_Component) {
               { className: 'logo' },
               _react2.default.createElement(
                 'a',
-                { href: 'https://yeb9925.github.io/portfolio-page/' },
+                { href: 'https://yeb9925.github.io/tim-han/' },
                 _react2.default.createElement('img', { className: 'logo-image', src: './logo.png' })
               )
             )
