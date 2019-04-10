@@ -20,7 +20,7 @@ export default class Navigation extends Component {
         <div id="nav-container">
           <div id="logo-container">
             <div className="logo">
-              <a href="https://yeb9925.github.io/portfolio-page/">
+              <a href="https://yeb9925.github.io/tim-han/">
                 <img className="logo-image" src="./logo.png"/>
               </a>
             </div>
@@ -58,7 +58,7 @@ export default class Navigation extends Component {
         <div id="nav-container">
           <div id="logo-container">
             <div className="logo">
-              <a href="https://yeb9925.github.io/portfolio-page/">
+              <a href="https://yeb9925.github.io/tim-han/">
                 <img className="logo-image" src="./logo.png"/>
               </a>
             </div>
