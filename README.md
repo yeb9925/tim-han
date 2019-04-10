@@ -4,8 +4,8 @@
 ### Get Template
 
 ```
-git clone https://github.com/yeb9925/react-spa-boilerplate
-cd /react-spa-boilerplate
+git clone https://github.com/yeb9925/react-spa-template
+cd /react-spa-template
 yarn install
 yarn start
 ```
