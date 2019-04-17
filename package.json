@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://yeb9925.github.io/portfolio-page/",
+  "homepage": "http://tim-han.com/",
   "scripts": {
     "start": "npm run build-watch & nodemon src/server",
     "build-watch": "webpack -w",
