@@ -34,12 +34,12 @@ export default class Main extends Component {
     return (
       <div id="components-container">
         {
-          window.innerWidth < 1200 && window.innerHeight > 1600
+          window.innerWidth < 1200 && window.innerHeight > 1500
             ? null
             : <Links />
         }
         {
-          window.innerWidth < 1200 && window.innerHeight > 1600
+          window.innerWidth < 1200 && window.innerHeight > 1500
             ? null
             : <Email />
         }

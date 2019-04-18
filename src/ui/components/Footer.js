@@ -5,7 +5,7 @@ export default class Footer extends Component {
     return (
       <div id="footer-container">
         {
-          window.innerWidth < 1200 && window.innerHeight > 1600
+          window.innerWidth < 1200 && window.innerHeight > 1500
             ? (
               <div className="footer-logos-container">
                 <div className="logo">

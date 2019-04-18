@@ -15,7 +15,7 @@ export default class Navigation extends Component {
   }
   
   render() {
-    if (window.innerWidth < 1200 && window.innerHeight > 1600) {
+    if (window.innerWidth < 1200 && window.innerHeight > 1500) {
       return (
         <div id="nav-container">
           <div id="logo-container">

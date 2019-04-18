@@ -30,7 +30,7 @@ export default class Writing extends Component {
           </div>
         </div>
         {
-          window.innerWidth < 1200 && window.innerHeight > 1600
+          window.innerWidth < 1200 && window.innerHeight > 1500
             ? (
               <div className="writing-one">
                 <div className="writing-image-container">

@@ -99,6 +99,7 @@ body {
     background-color: $overall-color;
     padding: 1px;
     border-radius: 10px;
+    margin-left: 20px;
 
     .resume-link {
       color: $primary-color;
@@ -591,7 +592,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) and (min-height: 1600px) {
+@media screen and (max-width: 1200px) and (min-height: 1500px) {
   #nav-container {
     #nav-bar {
       flex-direction: column;

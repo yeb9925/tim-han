@@ -39,7 +39,7 @@ export default class Project extends Component {
           </div>
         </div>
         {
-          window.innerWidth < 1200 && window.innerHeight > 1600
+          window.innerWidth < 1200 && window.innerHeight > 1500
             ? (
               <div className="project-one" style={{marginBottom: '80px'}}>
                 <div className="project-image-container">

@@ -30,7 +30,7 @@ export default class About extends Component {
           <ul className="skill-list">
             <li className="skill">Python</li>
             <li className="skill">JavaScript</li>
-            <li className="skill">Golang</li>
+            <li className="skill">Go</li>
             <li className="skill">SQL</li>
             <li className="skill">Node.js</li>
             <li className="skill">React & Vue</li>
