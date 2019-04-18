@@ -69,22 +69,40 @@ body {
       }
     }
   }
-}
 
-.nav-links {
-  margin: 3% 3%;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 110%;
-  color: $tertiary-color;
+  .nav-links {
+    margin: 3% 3%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 110%;
+    color: $tertiary-color;
+  
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.1);
+      transition-duration: .3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 3;
+    }
+  }
 
-  &:hover,
-  &:focus,
-  &:active {
-    transform: scale(1.1);
-    transition-duration: .3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 3;
+  .resume-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 55px;
+    border: solid;
+    border-width: 4px;
+    border-color: $primary-color;
+    background-color: $overall-color;
+    padding: 1px;
+    border-radius: 10px;
+
+    .resume-link {
+      color: $primary-color;
+    }
   }
 }
 
@@ -573,7 +591,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-height: 1600px) {
   #nav-container {
     #nav-bar {
       flex-direction: column;
@@ -629,22 +647,32 @@ body {
         }
       }
     }
+
+    .resume-link-container {
+      width: 275px;
+      height: 120px;
+      border: solid;
+      border-width: 8px;
+      border-color: $primary-color;
+      background-color: $mobile-nav-color;
+      margin-top: 50px;
+    }
   }
 
   #welcome-container {
     height: 100vh;
-    padding: 10vh 8vw 0 8vw;
+    padding: 8vh 8vw 0 8vw;
 
     .first-paragraph-container {
       padding: 0;
       display: block;
 
       .second-line {
-        font-size: 750%;
+        font-size: 730%;
       }
 
       .third-line{
-        font-size: 450%;
+        font-size: 430%;
       }
     }
 
@@ -660,9 +688,9 @@ body {
     }
 
     .fourth-line {
-      font-size: 240%;
+      font-size: 220%;
       line-height: 50px;
-      margin: 20px 0;
+      margin: 0 0 20px 0;
     }
 
     .fifth-line {

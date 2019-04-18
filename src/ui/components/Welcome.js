@@ -23,7 +23,7 @@ export default class Welcome extends Component {
         </div>
         <div>
           <p className='fifth-line'>
-            {'I also work as a freelance web developer on a case-by-case basis creating websites for organizations or individuals. Feel free to check out the websites I have already made and reach out!'}
+            {'I also work as a freelance web developer creating websites. Feel free to check out the websites I have already made and reach out!'}
           </p>
         </div>
         <div className="email-me-container">
