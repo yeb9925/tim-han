@@ -45,7 +45,7 @@ export default class Navigation extends Component {
                   <Link to="writing-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Writing</Link>
                   <Link to="contact-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Contact</Link>
                   <div className="resume-link-container">
-                    <a href="./TimHanResume.pdf" target="_blank" activeClass="active" className="nav-links resume-link" onClick={this.onMenuClick}>Resume</a>
+                    <a href="./TimHanResume.pdf" target="_blank" activeClass="active" className="resume-link" onClick={this.onMenuClick}>Resume</a>
                   </div>
                 </nav>
               )
@@ -73,7 +73,7 @@ export default class Navigation extends Component {
             <Link to="writing-container" activeClass="active" spy={true} smooth={true} className="nav-links">Writing</Link>
             <Link to="contact-container" activeClass="active" spy={true} smooth={true} className="nav-links">Contact</Link>
             <div className="resume-link-container">
-              <a href="./TimHanResume.pdf" target="_blank" activeClass="active" className="nav-links resume-link" onClick={this.onMenuClick}>Resume</a>
+              <a href="./TimHanResume.pdf" target="_blank" activeClass="active" className="resume-link" onClick={this.onMenuClick}>Resume</a>
             </div>
           </nav>
           {

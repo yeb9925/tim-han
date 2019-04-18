@@ -96,12 +96,23 @@ body {
     border: solid;
     border-width: 4px;
     border-color: $primary-color;
-    background-color: $overall-color;
     padding: 1px;
     border-radius: 10px;
     margin-left: 20px;
 
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.1);
+      transition-duration: .3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 3;
+    }
+
     .resume-link {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 110%;
       color: $primary-color;
     }
   }
@@ -655,7 +666,6 @@ body {
       border: solid;
       border-width: 8px;
       border-color: $primary-color;
-      background-color: $mobile-nav-color;
       margin-top: 50px;
     }
   }
