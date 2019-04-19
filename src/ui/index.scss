@@ -667,6 +667,11 @@ body {
       border-width: 8px;
       border-color: $primary-color;
       margin-top: 50px;
+      margin-left: 0;
+
+      .resume-link {
+        font-size: 300%;
+      }
     }
   }
 

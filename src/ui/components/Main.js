@@ -4,7 +4,7 @@ import { Links, Welcome, About, Email, Project, Writing, Contact, Footer } from 
 export default class Main extends Component {
   componentDidMount() {
     let prevScrollpos = window.pageYOffset
-    let isMobile = window.innerWidth < 1200 && window.innerHeight > 1600
+    let isMobile = window.innerWidth < 1200 && window.innerHeight > 1500
 
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset
