@@ -605,6 +605,13 @@ body {
 
 @media screen and (max-width: 1200px) and (min-height: 1500px) {
   #nav-container {
+    .nav-bar-outside-container {
+      position: fixed;
+      left: 0;
+      width: 400px;
+      height: 100vh;
+    }
+
     #nav-bar {
       flex-direction: column;
       right: 0;

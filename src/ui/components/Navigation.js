@@ -8,16 +8,24 @@ export default class Navigation extends Component {
       menuClicked: false
     }
     this.onMenuClick = this.onMenuClick.bind(this)
+    this.onClickOutside = this.onClickOutside.bind(this)
   }
 
   onMenuClick() {
     this.setState({ menuClicked: !this.state.menuClicked })
+  }
+
+  onClickOutside() {
+    if (this.state.menuClicked) {
+      this.setState({ menuClicked: false })
+    }
   }
   
   render() {
     if (window.innerWidth < 1200 && window.innerHeight > 1500) {
       return (
         <div id="nav-container">
+          <div className="nav-bar-outside-container" onClick={this.onClickOutside}></div>
           <div id="logo-container">
             <div className="logo">
               <a href="https://yeb9925.github.io/tim-han/">
