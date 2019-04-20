@@ -9,6 +9,7 @@ export default class Main extends Component {
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset
 
+      // Scrolling up
       if (prevScrollpos > currentScrollPos) {
         if (isMobile) {
           document.getElementById('logo-container').style.top = '55px'
@@ -17,13 +18,35 @@ export default class Main extends Component {
           document.getElementById('nav-bar').style.top = '0'
           document.getElementById('logo-container').style.top = '20px'
         }
+
+        // Hide after 1.5 seconds
+        setTimeout(() => {
+          if (prevScrollpos === 0) {
+            if (isMobile) {
+              document.getElementById('logo-container').style.top = '55px'
+              document.getElementById('hamburger-container').style.top = '90px'
+            } else {
+              document.getElementById('nav-bar').style.top = '0'
+              document.getElementById('logo-container').style.top = '20px'
+            }
+          } else {
+            if (isMobile) {
+              document.getElementById('logo-container').style.top = '-170px'
+              document.getElementById('hamburger-container').style.top = '-170px'
+            } else {
+              document.getElementById('nav-bar').style.top = '-300px'
+              document.getElementById('logo-container').style.top = '-300px'
+            }
+          }
+        }, 1500)
+      // Scrolling down
       } else {
         if (isMobile) {
           document.getElementById('logo-container').style.top = '-170px'
           document.getElementById('hamburger-container').style.top = '-170px'
         } else {
-          document.getElementById('nav-bar').style.top = '-100px'
-          document.getElementById('logo-container').style.top = '-100px'
+          document.getElementById('nav-bar').style.top = '-300px'
+          document.getElementById('logo-container').style.top = '-300px'
         }
       }
       prevScrollpos = currentScrollPos

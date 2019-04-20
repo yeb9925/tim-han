@@ -39,13 +39,13 @@ export default class Navigation extends Component {
                       <img className="close-button-image" src="./mobile-assets/mobile-close-button.png"/>
                     </div>
                   </div>
-                  <Link to="welcome-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Home</Link>
-                  <Link to="about-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>About</Link>
-                  <Link to="project-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Project</Link>
-                  <Link to="writing-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Writing</Link>
-                  <Link to="contact-container" activeClass="active" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Contact</Link>
+                  <Link to="welcome-container" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Home</Link>
+                  <Link to="about-container" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>About</Link>
+                  <Link to="project-container" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Project</Link>
+                  <Link to="writing-container" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Writing</Link>
+                  <Link to="contact-container" spy={true} smooth={true} className="nav-links" onClick={this.onMenuClick}>Contact</Link>
                   <div className="resume-link-container">
-                    <a href="./TimHanResume.pdf" target="_blank" activeClass="active" className="resume-link" onClick={this.onMenuClick}>Resume</a>
+                    <a href="./TimHanResume.pdf" target="_blank" className="resume-link" onClick={this.onMenuClick}>Resume</a>
                   </div>
                 </nav>
               )
@@ -67,13 +67,13 @@ export default class Navigation extends Component {
             </div>
           </div>
           <nav id="nav-bar">
-            <Link to="welcome-container" activeClass="active" spy={true} smooth={true} className="nav-links">Home</Link>
-            <Link to="about-container" activeClass="active" spy={true} smooth={true} className="nav-links">About</Link>
-            <Link to="project-container" activeClass="active" spy={true} smooth={true} className="nav-links">Project</Link>
-            <Link to="writing-container" activeClass="active" spy={true} smooth={true} className="nav-links">Writing</Link>
-            <Link to="contact-container" activeClass="active" spy={true} smooth={true} className="nav-links">Contact</Link>
+            <Link to="welcome-container" spy={true} smooth={true} className="nav-links">Home</Link>
+            <Link to="about-container" spy={true} smooth={true} className="nav-links">About</Link>
+            <Link to="project-container" spy={true} smooth={true} className="nav-links">Project</Link>
+            <Link to="writing-container" spy={true} smooth={true} className="nav-links">Writing</Link>
+            <Link to="contact-container" spy={true} smooth={true} className="nav-links">Contact</Link>
             <div className="resume-link-container">
-              <a href="./TimHanResume.pdf" target="_blank" activeClass="active" className="resume-link" onClick={this.onMenuClick}>Resume</a>
+              <a href="./TimHanResume.pdf" target="_blank" className="resume-link" onClick={this.onMenuClick}>Resume</a>
             </div>
           </nav>
           {
