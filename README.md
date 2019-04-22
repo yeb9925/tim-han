@@ -1,4 +1,4 @@
-## Portfolio Website (React)
+## Portfolio Website
 
 
 ### Get Template
