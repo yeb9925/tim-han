@@ -33280,7 +33280,7 @@ var About = function (_Component) {
                 'Unified'
               )
             ),
-            ' where I grew substantially by learning curtting-edge technologies, software development process, and debugging.'
+            ' where I grew substantially by learning cutting-edge technologies, software development process, and debugging.'
           )
         ),
         _react2.default.createElement(
