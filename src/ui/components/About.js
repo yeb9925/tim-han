@@ -14,11 +14,13 @@ export default class About extends Component {
         </div>
         <div className="about-description">
           <p className="about-paragraph">
-            {'After I graduated from '}
+            {'I graduated from '}
             <span><a href="https://www.qc.cuny.edu/Pages/home.aspx" target="_blank" style={{color: '#45ce95', textDecoration: 'none'}}>{'Queens College'}</a></span>
-            {' with Bachelor\'\s Degree in Mathematics with minor in Computer Science, I joined the Engineering Team at '}
+            {' with Bachelor\'\s Degree in Mathematics with minor in Computer Science. My first gig was at '}
             <span><a href='https://unified.com/' target='_blank' style={{color: '#45ce95', textDecoration: 'none'}}>{'Unified'}</a></span>
-            {' where I grew substantially by learning curtting-edge technologies, software development process, and debugging.'}
+            {' as a Software Engineer and now I work at '}
+            <span><a href='https://spotify.com/' target='_blank' style={{color: '#45ce95', textDecoration: 'none'}}>{'Spotify'}</a></span>
+            {' as a Martech Engineer.'}
           </p>
         </div>
         <div className="about-description">

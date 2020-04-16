@@ -16,9 +16,9 @@ export default class Welcome extends Component {
         </div>
         <div>
           <p className='fourth-line'>
-            {'\I\'m a software engineer based in New York, NY specializing in building web (front-end and back-end) and data-related applications. I currently work at '}
-            <span><a href='https://unified.com/' target='_blank' style={{color: '#45ce95', textDecoration: 'none'}}>{'Unified'}</a></span>
-            {' as a Software Engineer.'}
+            {'\I\'m a software engineer based in New York, NY specializing in building web applications with 2 year experience. I currently work at '}
+            <span><a href='https://spotify.com/' target='_blank' style={{color: '#45ce95', textDecoration: 'none'}}>{'Spotify'}</a></span>
+            {' as a Martech Engineer.'}
           </p>
         </div>
         <div>
