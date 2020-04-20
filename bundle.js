@@ -32539,7 +32539,7 @@ var Welcome = function (_Component) {
                 'Spotify'
               )
             ),
-            ' as a Martech Engineer.'
+            ' as a Software Engineer.'
           )
         ),
         _react2.default.createElement(
@@ -33322,7 +33322,7 @@ var About = function (_Component) {
                 'Spotify'
               )
             ),
-            ' as a Martech Engineer.'
+            ' as a Software Engineer.'
           )
         ),
         _react2.default.createElement(
