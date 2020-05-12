@@ -20,7 +20,7 @@ export default class About extends Component {
             <span><a href='https://unified.com/' target='_blank' style={{color: '#45ce95', textDecoration: 'none'}}>{'Unified'}</a></span>
             {' as a Software Engineer and now I work at '}
             <span><a href='https://spotify.com/' target='_blank' style={{color: '#45ce95', textDecoration: 'none'}}>{'Spotify'}</a></span>
-            {' as a Martech Engineer.'}
+            {' as a Software Engineer.'}
           </p>
         </div>
         <div className="about-description">

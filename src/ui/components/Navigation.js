@@ -22,24 +22,38 @@ export default class Navigation extends Component {
   }
   
   render() {
+    let isBlog = false
+    if(this.props.children.props.children[0].props.path) {
+      isBlog = true
+    }
+    
     if (window.innerWidth < 1200 && window.innerHeight > 1500) {
       return (
         <div id="nav-container">
-          <div className="nav-bar-outside-container" onClick={this.onClickOutside}></div>
-          <div id="logo-container">
-            <div className="logo">
-              <a href="https://yeb9925.github.io/tim-han/">
-                <img className="logo-image" src="./logo.png"/>
-              </a>
-            </div>
-          </div>
-          <div id="hamburger-container" onClick={this.onMenuClick}>
-            <div className="hamburger">
-              <img className="hamburger-image" src="./mobile-assets/hamburger.png"/>
-            </div>
-          </div>
+          { isBlog ? <div></div> : <div className="nav-bar-outside-container" onClick={this.onClickOutside}></div> }
+          
           {
-            this.state.menuClicked
+            isBlog
+              ? <div></div>
+              : <div id="logo-container">
+                  <div className="logo">
+                    <a href="https://yeb9925.github.io/tim-han/">
+                      <img className="logo-image" src="./logo.png"/>
+                    </a>
+                  </div>
+                </div>
+          }
+          {
+            isBlog
+              ? <div></div>
+              : <div id="hamburger-container" onClick={this.onMenuClick}>
+                  <div className="hamburger">
+                    <img className="hamburger-image" src="./mobile-assets/hamburger.png"/>
+                  </div>
+                </div>
+          }
+          {
+            this.state.menuClicked || !isBlog
               ? (
                 <nav id="nav-bar">
                   <div id="close-button-container" onClick={this.onMenuClick}>
@@ -67,23 +81,32 @@ export default class Navigation extends Component {
     } else {
       return (
         <div id="nav-container">
-          <div id="logo-container">
-            <div className="logo">
-              <a href="https://yeb9925.github.io/tim-han/">
-                <img className="logo-image" src="./logo.png"/>
-              </a>
-            </div>
-          </div>
-          <nav id="nav-bar">
-            <Link to="welcome-container" spy={true} smooth={true} className="nav-links">Home</Link>
-            <Link to="about-container" spy={true} smooth={true} className="nav-links">About</Link>
-            <Link to="project-container" spy={true} smooth={true} className="nav-links">Project</Link>
-            <Link to="writing-container" spy={true} smooth={true} className="nav-links">Writing</Link>
-            <Link to="contact-container" spy={true} smooth={true} className="nav-links">Contact</Link>
-            <div className="resume-link-container">
-              <a href="./TimHanResume.pdf" target="_blank" className="resume-link" onClick={this.onMenuClick}>Resume</a>
-            </div>
-          </nav>
+          {
+            isBlog 
+              ? <div></div> 
+              : <div id="logo-container">
+                  <div className="logo">
+                    <a href="https://yeb9925.github.io/tim-han/">
+                      <img className="logo-image" src="./logo.png"/>
+                    </a>
+                  </div>
+                </div>
+          }
+
+          {
+            isBlog
+              ? <div></div>
+              : <nav id="nav-bar">
+                  <Link to="welcome-container" spy={true} smooth={true} className="nav-links">Home</Link>
+                  <Link to="about-container" spy={true} smooth={true} className="nav-links">About</Link>
+                  <Link to="project-container" spy={true} smooth={true} className="nav-links">Project</Link>
+                  <Link to="writing-container" spy={true} smooth={true} className="nav-links">Writing</Link>
+                  <Link to="contact-container" spy={true} smooth={true} className="nav-links">Contact</Link>
+                  <div className="resume-link-container">
+                    <a href="./TimHanResume.pdf" target="_blank" className="resume-link" onClick={this.onMenuClick}>Resume</a>
+                  </div>
+                </nav>
+          }
           {
             this.props.children
           }
