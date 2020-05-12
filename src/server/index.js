@@ -15,6 +15,16 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // Static-File Serving Middleware
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
+// Sends blogs.html
+app.use('/blogs', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public/blogs.html'))
+});
+
+// Sends index.html
+app.use('/:param', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public/404.html'))
+});
+
 // Sends index.html
 app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public/index.html'))
